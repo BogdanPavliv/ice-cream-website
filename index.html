@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice cream website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header lock-padding">
+            <div class="header__container">
+                <a href="#" class="header__logo">
+                    <img src="./images/ice_cream_logo.svg" alt="Ice cream">
+                </a>
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li><a data-goto=".page__section_1" href="#" class="menu__link">Home</a></li>
+                            <li><a data-goto=".page__section_3" href="#" class="menu__link">How it’s made?</a></li>
+                            <li><a data-goto=".page__section_2" href="#" class="menu__link">Our products</a></li>
+                            <li><a data-goto=".page__section_4" href="#" class="menu__link">Contact</a></li>                                                     
+                       </ul>
+                       <div class="button-buy__now-container">
+                           <a href="#popup" class="button-buy__now mob popup-link">
+                               Buy now
+                               <img src="./images/arrow.svg" alt="">
+                           </a>
+                       </div> 
+                    </nav>
+                </div>
+                <div class="header__menu__button">
+                    <a href="#popup" class="button-buy__now popup-link">
+                        Buy now
+                        <img src="./images/arrow.svg" alt="">
+                    </a>
+                </div>   
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container__wrapper page__section_1">
+                <div class="main__container">
+                    <div class="main__container__left">
+                        <div class="main__container__left-top">
+                             <div class="main__container__left-top-title">
+                                ice cream <br> made with <br> <span>passion</span> 
+                             </div>
+                             <div class="main__container__left-top-buttons">
+                                <a href="#" class="main__container__left-top-button-products">Products</a>
+                                <a href="#popup_5" class="main__container__left-top-button-howItsMade popup-link">How it’s made?</a>
+                             </div>
+                        </div>
+                        <div class="main__container__left-bottom">
+                            <div class="main__container__left-bottom-image">
+                                <img src="./images/mainBanner/ice_cream_plate.svg" alt="Ice cream plate">
+                            </div>
+                            <div class="main__container__left-bottom-text">
+                                <div class="main__container__left-bottom-text-content">
+                                    Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, <br> sed do eiusmod tempor <br> incididunt ut labore et
+                                </div>
+                                <div class="main__container__left-bottom-text-content-image">
+                                    <img src="./images/mainBanner/arrow_main_banner.svg" alt="" class="main__container__left-bottom-text-content-image-arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__container__right">
+                        <div class="main__container__right__left-side">
+                            <img class="main__container__right__left-side-image" src="./images/mainBanner/ice_cream.png" alt="">
+                        </div>
+                        <div class="main__container__right__right-side">
+                            <div class="main__container__right__right-side-info">
+                                <div class="main__container__right__right-side-count">16</div>
+                                <div class="main__container__right__right-side-content">cafes</div>
+                                <div class="main__container__right__right-side-count">23</div>
+                                <div class="main__container__right__right-side-content">food trucks</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products__container__wrapper page__section_2">
+                <div class="products__container">
+                    <div class="products__container-title">100% natural</div>
+                    <div class="products__container-subtitle">products</div>
+                    <div class="products__items">
+
+                        <div class="product__item-wrapper">
+                            <div class="product__item-image">
+                                <div class="product__item-image-container green">
+                                    <img src="./images/products/product_ice-cream.png" alt="">
+                                </div>
+                            </div>
+                            <div class="product__item green">
+                                <div class="product__item-content">
+                                    <div class="product__item-title">ice cream</div>
+                                    <div class="product__item-text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</div>
+                                    <div class="product__item-arrow">
+                                        <a href="#popup_2" class="popup-link">
+                                            <svg width="42" height="16" viewBox="0 0 42 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M40.9745 8.5956C41.365 8.20507 41.365 7.57191 40.9745 7.18138L34.6106 0.817421C34.22 0.426897 33.5869 0.426897 33.1963 0.817421C32.8058 1.20795 32.8058 1.84111 33.1963 2.23163L38.8532 7.88849L33.1963 13.5453C32.8058 13.9359 32.8058 14.569 33.1963 14.9596C33.5869 15.3501 34.22 15.3501 34.6106 14.9596L40.9745 8.5956ZM0.0327148 8.88849H40.2674V6.88849H0.0327148V8.88849Z" fill="#131313"/>
+                                            </svg>
+                                        </a>          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="product__item-wrapper">
+                            <div class="product__item-image">
+                                <div class="product__item-image-container yellow">
+                                    <img src="./images/products/product_ice-coffe.png" alt="">
+                                </div>
+                            </div>
+                            <div class="product__item yellow">
+                                <div class="product__item-content">
+                                    <div class="product__item-title">ice coffee</div>
+                                    <div class="product__item-text">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</div>
+                                    <div class="product__item-arrow">
+                                        <a href="#popup_3" class="popup-link">
+                                            <svg width="42" height="16" viewBox="0 0 42 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M40.9745 8.5956C41.365 8.20507 41.365 7.57191 40.9745 7.18138L34.6106 0.817421C34.22 0.426897 33.5869 0.426897 33.1963 0.817421C32.8058 1.20795 32.8058 1.84111 33.1963 2.23163L38.8532 7.88849L33.1963 13.5453C32.8058 13.9359 32.8058 14.569 33.1963 14.9596C33.5869 15.3501 34.22 15.3501 34.6106 14.9596L40.9745 8.5956ZM0.0327148 8.88849H40.2674V6.88849H0.0327148V8.88849Z" fill="#131313"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="product__item-wrapper">
+                            <div class="product__item-image">
+                                <div class="product__item-image-container orange">
+                                    <img src="./images/products/product_ice-milkshake.png" alt="">
+                                </div>
+                            </div>
+                            <div class="product__item orange">
+                                <div class="product__item-content">
+                                    <div class="product__item-title">milkshakes</div>
+                                    <div class="product__item-text">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other sweets of your choice</div>
+                                    <div class="product__item-arrow">
+                                        <a href="#popup_4" class="popup-link">
+                                            <svg width="42" height="16" viewBox="0 0 42 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M40.9745 8.5956C41.365 8.20507 41.365 7.57191 40.9745 7.18138L34.6106 0.817421C34.22 0.426897 33.5869 0.426897 33.1963 0.817421C32.8058 1.20795 32.8058 1.84111 33.1963 2.23163L38.8532 7.88849L33.1963 13.5453C32.8058 13.9359 32.8058 14.569 33.1963 14.9596C33.5869 15.3501 34.22 15.3501 34.6106 14.9596L40.9745 8.5956ZM0.0327148 8.88849H40.2674V6.88849H0.0327148V8.88849Z" fill="#131313"/>
+                                            </svg>
+                                        </a>   
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="how_its_made__container__wrapper page__section_3">
+                <div class="how_its_made__container">
+                    <div class="how_its_made__title">tradition and love</div>
+                    <div class="how_its_made__subtitle">how it’s made?</div>
+                    <div class="how_its_made__content">
+                        <div class="how_its_made__content-image">
+                            <div class="how_its_made__content-image-yellow">
+                                <img src="./images/howItsMade/cow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="how_its_made__content-wrapper">
+                            <div class="how_its_made__content-text"><p class="p1">Ice is a place where you will become not only a little happier, but also healthier. Health is the main value for us, and we follow it when creating our handmade desserts. </p><p class="p2">We use traditional recipes and 100% natural ingredients. Our products are so natural that they can be given to children from the age of three years. Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.</p><p class="p3">This is enough to choose ice cream and coffee for any mood!</p></div>
+                            <a href="#popup_5" class="how_its_made__content-button popup-link">Read more <img src="./images/howItsMade/howItsMade_arrow.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="how_its_made__content-bottom">
+                        <div class="how_its_made__content-bottom-items">
+
+                            <div class="how_its_made__content-bottom-item">
+                                <div class="how_its_made__content-bottom-item-image">
+                                    <img src="./images/howItsMade/cow_icon.svg" alt="">
+                                </div>
+                                <div class="how_its_made__content-bottom-item-title">721</div>
+                                <div class="how_its_made__content-bottom-item-subtitle">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</div>
+                            </div>
+
+                            <div class="how_its_made__content-bottom-item">
+                                <div class="how_its_made__content-bottom-item-image">
+                                    <img src="./images/howItsMade/weight_icon.svg" alt="">
+                                </div>
+                                <div class="how_its_made__content-bottom-item-title">16kg</div>
+                                <div class="how_its_made__content-bottom-item-subtitle">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</div>
+                            </div>
+
+                            <div class="how_its_made__content-bottom-item">
+                                <div class="how_its_made__content-bottom-item-image">
+                                    <img src="./images/howItsMade/ice-cream_icon.svg" alt="">
+                                </div>
+                                <div class="how_its_made__content-bottom-item-title">84</div>
+                                <div class="how_its_made__content-bottom-item-subtitle">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__container__wrapper">
+                <div class="reviews__container">
+                    <div class="reviews__container-image-top">
+                        <img src="./images/reviews/image-reviews.png" alt="">
+                    </div>
+                    <div class="reviews__container-slider">
+                        <div class="slideshow__container">
+
+                            <div class="slide">
+                                <div class="slide__image">
+                                    <img src="./images/reviews/client_1.png" alt="">
+                                </div>
+                                <div class="slide__review">
+                                    I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.
+                                </div>
+                                <div class="slide__review-city">
+                                    Emily, Los Angeles
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="slide__image">
+                                    <img src="./images/reviews/client_2.png" alt="">
+                                </div>
+                                <div class="slide__review">
+                                    Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!
+                                </div>
+                                <div class="slide__review-city">
+                                    Bryan, New-York
+                                </div>
+                            </div>
+
+                            <div class="slide">
+                                <div class="slide__image">
+                                    <img src="./images/reviews/client_3.png" alt="">
+                                </div>
+                                <div class="slide__review">
+                                    Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always served politely and quickly!
+                                </div>
+                                <div class="slide__review-city">
+                                    Diana, Chicago
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="slideshow__dotts">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="address__container__wrapper page__section_4">
+                <div class="address__container">
+                    <div class="address__container-items">
+
+                        <div class="address__container-item">
+                            <div class="address__container-item-title">
+                                <div class="address__container-item-title-text">CAFE</div>
+                            </div>
+                            <div class="address__container-item-address">
+                                <div class="address__container-item-city">Chicago</div>
+                                <div class="address__container-item-street">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</div>
+                            </div>
+                            <div class="address__container-item-schedule">
+                                <div class="address__container-item-daysOfweek">Monday - Friday</div>
+                                <div class="address__container-item-hoursOfwork">06:00 AM - 10:00 PM</div>
+                                <div class="address__container-item-daysOfweek weekend">Saturday - Sunday</div>
+                                <div class="address__container-item-hoursOfwork">08:00 AM - 16:00 PM</div>
+                            </div>
+                            <div class="address__container-item-contacts">
+                                <div class="address__container-item-telephone">
+                                    <a href="tel:+610383766284">+61(0) 383 766 284</a>
+                                </div>
+                                <div class="address__container-item-email">
+                                    <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="address__container-item">
+                            <div class="address__container-item-title">
+                                <div class="address__container-item-title-text double-width">FOOD TRUCK</div>
+                            </div>
+                            <div class="address__container-item-address">
+                                <div class="address__container-item-city">Los Angeles</div>
+                                <div class="address__container-item-street">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</div>
+                            </div>
+                            <div class="address__container-item-schedule">
+                                <div class="address__container-item-daysOfweek">Monday - Friday</div>
+                                <div class="address__container-item-hoursOfwork">06:00 AM - 10:00 PM</div>
+                                <div class="address__container-item-daysOfweek weekend">Saturday - Sunday</div>
+                                <div class="address__container-item-hoursOfwork">08:00 AM - 16:00 PM</div>
+                            </div>
+                            <div class="address__container-item-contacts">
+                                <div class="address__container-item-telephone">
+                                    <a href="tel:+610383766284">+61(0) 383 766 284</a>
+                                </div>
+                                <div class="address__container-item-email">
+                                    <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="address__container-item">
+                            <div class="address__container-item-title">
+                                <div class="address__container-item-title-text">CAFE</div>
+                            </div>
+                            <div class="address__container-item-address">
+                                <div class="address__container-item-city">New York</div>
+                                <div class="address__container-item-street">726 Sterling Pl, Brooklyn, NY 11222, USA</div>
+                            </div>
+                            <div class="address__container-item-schedule">
+                                <div class="address__container-item-daysOfweek">Monday - Friday</div>
+                                <div class="address__container-item-hoursOfwork">06:00 AM - 10:00 PM</div>
+                                <div class="address__container-item-daysOfweek weekend">Saturday - Sunday</div>
+                                <div class="address__container-item-hoursOfwork">08:00 AM - 16:00 PM</div>
+                            </div>
+                            <div class="address__container-item-contacts">
+                                <div class="address__container-item-telephone">
+                                    <a href="tel:+610383766284">+61(0) 383 766 284</a>
+                                </div>
+                                <div class="address__container-item-email">
+                                    <a href="mailto:noreply@envato.com">noreply@envato.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="address__container-buttons">
+                        <a href="#popup_6" class="address__container-button-locations popup-link">Our Locations<img src="./images/address/address-arrow.svg" alt=""></a>
+                        <a href="#popup_7" class="address__container-button-franchise popup-link">Franchise<img src="./images/address/address-arrow.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__container-top">
+                   <div class="footer__container-top__left-side">
+                        <div class="footer__container-top__left-side-title">homemade ice cream made</div>
+                        <div class="footer__container-top__left-side-subtitle">with passion</div>
+                   </div>
+                   <div class="footer__container-top__right-side">
+                        <div class="footer__container-top__right-side-social">
+                            <a href="" class="footer__container-top__right-side-social-facebook">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_105_10822)">
+                                    <path d="M17 34C26.3888 34 34 26.3888 34 17C34 7.61116 26.3888 0 17 0C7.61116 0 0 7.61116 0 17C0 26.3888 7.61116 34 17 34Z" fill="#F8D24E"/>
+                                    <path d="M21.7235 16.9804H18.9502V27.2001H14.7484V16.9804H12.75V13.3888H14.7484V11.0646C14.7484 9.40261 15.5333 6.80005 18.9876 6.80005L22.1 6.81315V10.2994H19.8417C19.4713 10.2994 18.9505 10.4856 18.9505 11.2784V13.3922H22.0906L21.7235 16.9804Z" fill="#84A178"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_105_10822">
+                                    <rect width="34" height="34" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                            </a>
+                            <a href="" class="footer__container-top__right-side-social-telegram">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_105_10829)">
+                                    <circle cx="17" cy="17" r="17" fill="#F8D24E"/>
+                                    <path d="M13.6713 19.5238L13.3338 23.9538C13.8167 23.9538 14.0258 23.7602 14.2765 23.5278L16.5401 21.5088L21.2305 24.7146C22.0907 25.162 22.6968 24.9264 22.9289 23.976L26.0076 10.5116L26.0085 10.5108C26.2813 9.32401 25.5486 8.85991 24.7105 9.15106L6.61358 15.6175C5.3785 16.0649 5.3972 16.7075 6.40362 16.9987L11.0303 18.3418L21.7771 12.0658C22.2829 11.7532 22.7427 11.9261 22.3645 12.2387L13.6713 19.5238Z" fill="#84A178"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_105_10829">
+                                    <rect width="34" height="34" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                            </a>
+                            <a href="" class="footer__container-top__right-side-social-github">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="17" cy="17" r="17" fill="#F8D24E"/>
+                                    <path d="M17 7C11.5074 7 7 11.5074 7 17C7 21.687 10.2889 25.9447 14.6562 27V23.6916C14.2235 23.7863 13.8253 23.7891 13.3847 23.6592C12.7938 23.4848 12.3136 23.0912 11.9571 22.4909C11.7299 22.1076 11.3272 21.6919 10.9072 21.7224L10.8042 20.5551C11.7125 20.4773 12.4984 21.1086 12.9648 21.8923C13.172 22.2408 13.4105 22.4451 13.7166 22.5354C14.0125 22.6226 14.3302 22.5807 14.7003 22.45C14.7933 21.7089 15.1328 21.4315 15.3893 21.0408V21.0402C12.7846 20.6517 11.7466 19.2699 11.3346 18.1792C10.7886 16.731 11.0816 14.9218 12.047 13.7784C12.0658 13.7561 12.0996 13.6978 12.0865 13.6571C11.6439 12.32 12.1833 11.2139 12.2031 11.0965C12.714 11.2476 12.797 10.9445 14.4222 11.9319L14.7031 12.1007C14.8206 12.1707 14.7837 12.1308 14.9012 12.1219C15.5797 11.9376 16.295 11.8358 16.9998 11.8267C17.71 11.8358 18.4207 11.9376 19.1274 12.1294L19.2183 12.1385C19.2104 12.1373 19.243 12.1328 19.2978 12.1001C21.328 10.8704 21.2551 11.2723 21.7995 11.0953C21.8192 11.2128 22.3514 12.3369 21.9135 13.6571C21.8544 13.839 23.6736 15.5048 22.6653 18.1787C22.2533 19.2699 21.2154 20.6517 18.6107 21.0402V21.0408C18.9446 21.5497 19.3457 21.8204 19.3436 22.8702V27C23.7111 25.9447 26.9998 21.687 26.9998 17C27 11.5074 22.4926 7 17 7V7Z" fill="#84A178"/>
+                                    </svg>
+                            </a>    
+                        </div>
+                        <div class="footer__container-top__right-side-contacts">Feel free to contact <span>+61 (0) 383 766 284</span></div>
+                   </div>
+                </div>
+                <div class="footer__container-bottom">
+                    <div class="footer__container-bottom-rights">
+                        <div class="footer__container-bottom-rights-container">
+                            <div class="brand">© 2022 - IceCream.</div>
+                            <div class="rights">All Rights Reserved.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- popups -->
+    <!-- Popup 1 -->
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="" id="header" class="popup__close close-popup"><img src="./images/modal/popup-close.svg" alt=""></a>
+                <div class="popup__title">Buy now</div>
+                <div class="popup__product__items">
+
+                    <div class="popup__product__item-wrapper">
+                        <div class="popup__product__item-image">
+                            <div class="popup__product__item-image-container green">
+                                <img src="./images/modal/popup_image-ice-cream.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="popup__product__item green">
+                            <div class="popup__product__item-name">ice cream</div>
+                        </div>
+                    </div>
+
+                    <div class="popup__product__item-wrapper">
+                        <div class="popup__product__item-image">
+                            <div class="popup__product__item-image-container yellow">
+                                <img src="./images/modal/popup_image-ice-coffe.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="popup__product__item yellow">
+                            <div class="popup__product__item-name">ice coffee</div>
+                        </div>
+                    </div>
+
+                    <div class="popup__product__item-wrapper">
+                        <div class="popup__product__item-image">
+                            <div class="popup__product__item-image-container orange">
+                                <img src="./images/modal/popup_image-milkshake.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="popup__product__item orange">
+                            <div class="popup__product__item-name">milkshake</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="popup__form">
+                    <form class="form" id="form" action="#">
+                        <div class="popup__form-input">
+                            <input type="text" name="name" class="form__input _req" placeholder="Name">
+                        </div>
+                        <div class="popup__form-input">
+                            <input type="text" name="phone" class="form__input _req" placeholder="Phone">
+                        </div>
+                        <div class="popup__form-input">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                        </div>
+                        <div class="popup__form-button">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup 2 -->
+    <div id="popup_2" class="popup">
+        <div class="popup__body">
+            <div class="popup_ingridients__content">
+                <a href="" id="header" class="popup__close close-popup mobile"><img src="./images/modal/popup-close.svg" alt=""></a>
+                <div class="popup__title ingridients">Chololate icecream</div>
+                <div class="popup_ingridients__image">
+                    <div class="popup_ingridients__image-container">
+                        <img src="./images/modal/ice-cream-popup.png" alt="">
+                    </div>
+                </div>
+                <div class="popup_ingridients__items">
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            320
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            kcal
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            4g 
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            Protein...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            8,2g 
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            Fats 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            40,4g 
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            Carbs   
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="popup_ingridients-container">
+                    <div class="popup_ingridients-title">Ingredients</div>
+                    <div class="popup_ingridients-table">
+                        <div class="popup_ingridients-table-row-text">
+                            <div class="popup_ingridients-table-row-text-content">Milk</div>
+                            <div class="popup_ingridients-table-row-text-content">Belgian chocolate</div>
+                            <div class="popup_ingridients-table-row-text-content">Cream</div>
+                            <div class="popup_ingridients-table-row-text-content">Cocoa powder</div>
+                            <div class="popup_ingridients-table-row-text-content">Sugar</div>
+                            <div class="popup_ingridients-table-row-text-content">Vanilla sugar</div>
+                        </div>
+                        <div class="popup_ingridients-table-row-value">
+                            <div class="popup_ingridients-table-row-value-content">100ml</div>
+                            <div class="popup_ingridients-table-row-value-content">20g</div>
+                            <div class="popup_ingridients-table-row-value-content">150 ml</div>
+                            <div class="popup_ingridients-table-row-value-content">30g</div>
+                            <div class="popup_ingridients-table-row-value-content">40g</div>
+                            <div class="popup_ingridients-table-row-value-content">10g</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__form">
+                    <form class="form ingridients" id="form" action="#">
+                        <div class="popup__form-input">
+                            <input type="text" class="mobile form__input _req" name="name" id="" placeholder="Name">
+                        </div>
+                        <div class="popup__form-input">
+                            <input type="text" class="mobile form__input _req" name="phone" id="" placeholder="Phone">
+                        </div>
+                        <div class="popup__form-input">
+                            <textarea name="" class="mobileTextarea" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                        </div>
+                        <div class="popup__form-button modal-desktop">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup 3 -->
+    <div id="popup_3" class="popup">
+        <div class="popup__body">
+            <div class="popup_ingridients__content">
+                <a href="" id="header" class="popup__close close-popup mobile"><img src="./images/modal/popup-close.svg" alt=""></a>
+                <div class="popup__title ingridients">Ice coffee</div>
+                <div class="popup_ingridients__image">
+                    <div class="popup_ingridients__image-container">
+                        <img src="./images/modal/popup_image-ice-coffe.svg" alt="">
+                    </div>
+                </div>
+                <div class="popup_ingridients__items">
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            320
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            kcal
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            4g 
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            Protein...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            8,2g 
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            Fats 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            40,4g 
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            Carbs   
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="popup_ingridients-container">
+                    <div class="popup_ingridients-title">Ingredients</div>
+                    <div class="popup_ingridients-table">
+                        <div class="popup_ingridients-table-row-text">
+                            <div class="popup_ingridients-table-row-text-content">Milk</div>
+                            <div class="popup_ingridients-table-row-text-content">Belgian chocolate</div>
+                            <div class="popup_ingridients-table-row-text-content">Cream</div>
+                            <div class="popup_ingridients-table-row-text-content">Cocoa powder</div>
+                            <div class="popup_ingridients-table-row-text-content">Sugar</div>
+                            <div class="popup_ingridients-table-row-text-content">Vanilla sugar</div>
+                        </div>
+                        <div class="popup_ingridients-table-row-value">
+                            <div class="popup_ingridients-table-row-value-content">100ml</div>
+                            <div class="popup_ingridients-table-row-value-content">20g</div>
+                            <div class="popup_ingridients-table-row-value-content">150 ml</div>
+                            <div class="popup_ingridients-table-row-value-content">30g</div>
+                            <div class="popup_ingridients-table-row-value-content">40g</div>
+                            <div class="popup_ingridients-table-row-value-content">10g</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__form">
+                    <form class="form ingridients" id="form" action="#">
+                        <div class="popup__form-input">
+                            <input type="text" class="mobile form__input _req" name="name" id="" placeholder="Name">
+                        </div>
+                        <div class="popup__form-input">
+                            <input type="text" class="mobile form__input _req" name="phone" id="" placeholder="Phone">
+                        </div>
+                        <div class="popup__form-input">
+                            <textarea name="" class="mobileTextarea" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                        </div>
+                        <div class="popup__form-button modal-desktop">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup 4 -->
+    <div id="popup_4" class="popup">
+        <div class="popup__body">
+            <div class="popup_ingridients__content">
+                <a href="" id="header" class="popup__close close-popup mobile"><img src="./images/modal/popup-close.svg" alt=""></a>
+                <div class="popup__title ingridients">Milkshakes</div>
+                <div class="popup_ingridients__image">
+                    <div class="popup_ingridients__image-container">
+                        <img src="./images/modal/popup_image-milkshake.svg" alt="">
+                    </div>
+                </div>
+                <div class="popup_ingridients__items">
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            320
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            kcal
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            4g 
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            Protein...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            8,2g 
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            Fats 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popup_ingridients__item-wrapper">
+                        <div class="popup_ingridients__item-values">
+                           <div class="popup_ingridients__item-ellipse">
+                            40,4g 
+                           </div>
+                        </div>
+                        <div class="popup_ingridients__item-text">
+                            <div class="popup_ingridients__item-text-value">
+                            Carbs   
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="popup_ingridients-container">
+                    <div class="popup_ingridients-title">Ingredients</div>
+                    <div class="popup_ingridients-table">
+                        <div class="popup_ingridients-table-row-text">
+                            <div class="popup_ingridients-table-row-text-content">Milk</div>
+                            <div class="popup_ingridients-table-row-text-content">Belgian chocolate</div>
+                            <div class="popup_ingridients-table-row-text-content">Cream</div>
+                            <div class="popup_ingridients-table-row-text-content">Cocoa powder</div>
+                            <div class="popup_ingridients-table-row-text-content">Sugar</div>
+                            <div class="popup_ingridients-table-row-text-content">Vanilla sugar</div>
+                        </div>
+                        <div class="popup_ingridients-table-row-value">
+                            <div class="popup_ingridients-table-row-value-content">100ml</div>
+                            <div class="popup_ingridients-table-row-value-content">20g</div>
+                            <div class="popup_ingridients-table-row-value-content">150 ml</div>
+                            <div class="popup_ingridients-table-row-value-content">30g</div>
+                            <div class="popup_ingridients-table-row-value-content">40g</div>
+                            <div class="popup_ingridients-table-row-value-content">10g</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__form">
+                    <form class="form ingridients" id="form" action="#">
+                        <div class="popup__form-input">
+                            <input type="text" class="mobile form__input _req" name="name" id="" placeholder="Name">
+                        </div>
+                        <div class="popup__form-input">
+                            <input type="text" class="mobile form__input _req" name="phone" id="" placeholder="Phone">
+                        </div>
+                        <div class="popup__form-input">
+                            <textarea name="" class="mobileTextarea" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                        </div>
+                        <div class="popup__form-button modal-desktop">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup 5 -->
+    <div id="popup_5" class="popup">
+        <div class="popup__body">
+            <div class="popup__video__content">
+                <a href="" id="header" class="popup__close close-popup video"><img src="./images/modal/popup-close.svg" alt=""></a>
+                <div class="popup__title video">How it’s made?</div>
+                <div class="popup__video">
+                    <video src=""></video>
+                    <img src="./images/modal/video__play.svg" alt="">
+                </div>
+                <div class="popup__video__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup 6 -->
+    <div id="popup_6" class="popup">
+        <div class="popup__body">
+            <div class="popup__map__content">
+                <a href="" id="header" class="popup__close close-popup map"><img src="./images/modal/popup-close.svg" alt=""></a>
+                <div class="popup__title map">Our Locations</div>
+                <div class="popup__map">      
+                    <img src="./images/modal/map.png" alt="">
+                </div>
+                <div class="popup__map__button">
+                    <a href="">Open map</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popup 7 -->
+    <div id="popup_7" class="popup">
+        <div class="popup__body">
+            <div class="popup__franchise__content">
+                <a href="" id="header" class="popup__close close-popup franchise"><img src="./images/modal/popup-close.svg" alt=""></a>
+                <div class="popup__title franchise">Thank you for your interest in owning an Ice Cream shop</div>
+                <div class="popup__franchise-text">
+                    Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.
+                </div>
+                <div class="popup__franchise-form">
+                    <form class="form franchise" id="form" action="#">
+                        <div class="popup__form-input">
+                            <input type="text" class="mobile franchise form__input _req" name="name" id="" placeholder="Name">
+                        </div>
+                        <div class="popup__form-input">
+                            <input type="text" class="mobile franchise form__input _req" name="phone" id="" placeholder="Phone">
+                        </div>
+                        <div class="popup__form-input">
+                            <input type="text" class="mobile franchise franchiseForm form__input _req _email" name="email" id="" placeholder="Email">
+                        </div>
+                        <div class="popup__form-input">
+                            <textarea name="" class="mobileTextarea mobileTextareaFranchise" id="" cols="30" rows="10" placeholder="Comment"></textarea>
+                        </div>
+                        <div class="popup__form-button modal-desktop franchise">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popups end-->
+    <script src="js/script.js"></script>
+</body>
+</html>
