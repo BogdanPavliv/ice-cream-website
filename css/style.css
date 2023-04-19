@@ -235,6 +235,8 @@ body._touch .menu__link {
 .main {
     width: 100%;
     overflow: hidden;
+   
+    /* height: 743px; */
 }
 .main__container__wrapper{
     width: 100%;
@@ -883,7 +885,6 @@ body._touch .menu__link {
     display: block;
     border: 1px solid #E1E1E1;
 }
-
 .address__container-item-telephone {
     padding: 32px 0px 0px 0px;
 }
@@ -896,7 +897,6 @@ body._touch .menu__link {
     color: #131313;
 
 }
-
 .address__container-item-email a{
     font-family: "Montserrat Medium 500";
     font-style: normal;
@@ -1556,10 +1556,22 @@ body._touch .menu__link {
 .form__input._error{
     box-shadow: 0 0 15px red;
 }
+.form__input__form2._error{
+    box-shadow: 0 0 15px red;
+}
+.form__input__form3._error{
+    box-shadow: 0 0 15px red;
+}
+.form__input__form4._error{
+    box-shadow: 0 0 15px red;
+}
+.form__input_franchise._error{
+    box-shadow: 0 0 15px red;
+}
 /* ======================= Form validation ====================== */
 
 /* Медіа-запити */
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .menu__list {
         display: flex;
         align-items: center;
@@ -1567,7 +1579,7 @@ body._touch .menu__link {
 }
 
 /* Menu burger */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .menu__icon {
         z-index: 5;
         display: block;

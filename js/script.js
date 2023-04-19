@@ -44,6 +44,7 @@ if (iconMenu) {
         menuBody.classList.toggle('_active');
     });
 }
+
 // Scroll on click
 
 const menuLinks = document.querySelectorAll(".menu__link[data-goto]");
@@ -233,3 +234,247 @@ document.addEventListener('keydown', function (e) {
            Element.prototype.msMatchesSelector;
     }
 })();
+
+// Form validation
+document.addEventListener("DOMContentLoaded", function () {
+    // Form validation on Popup 1
+    const form = document.getElementById("form");
+    form.addEventListener("submit", formSend);
+
+    async function formSend(e) {
+        e.preventDefault();
+
+        let error = formValidate(form);
+
+        let formData = new FormData(form);
+
+        if (error === 0) {
+            form.reset();
+            alert(`The form has been sent`);
+        } else {
+            alert(`Fill in the required fields!`);
+        }
+    }
+
+    function formValidate(form) {
+        let error = 0;
+        let formReq = document.querySelectorAll('._req');
+
+        for (let index = 0; index < formReq.length; index++) {
+            const inputOther = formReq[index];
+            formRemoveError(inputOther);
+
+            if (inputOther.value === '') {
+                formAddError(inputOther);
+                error++;
+            }
+            
+        }
+        return error;
+    }
+
+    function formAddError(inputOther) {
+        inputOther.parentElement.classList.add('_error');
+        inputOther.classList.add("_error");
+    }
+
+    function formRemoveError(inputOther) {
+        inputOther.parentElement.classList.remove('_error');
+        inputOther.classList.remove("_error");
+    }
+    
+    // Form validation on Popup 2
+    const form2 = document.getElementById("form2");
+    form2.addEventListener("submit", formSendForm2);
+
+    async function formSendForm2(e) {
+        e.preventDefault();
+
+        let errorForm2 = formValidateForm2(form2);
+
+        let formData = new FormData(form2);
+
+        if (errorForm2 === 0) {
+            form2.reset();
+            alert(`The form has been sent`);
+        } else {
+            alert(`Fill in the required fields!`);
+        }
+    }
+
+    function formValidateForm2(form2) {
+        let errorForm2 = 0;
+        let formReqForm2 = document.querySelectorAll('._reqForm2');
+
+        for (let index = 0; index < formReqForm2.length; index++) {
+            const inputOtherForm2 = formReqForm2[index];
+            formRemoveError(inputOtherForm2);
+
+            if (inputOtherForm2.value === '') {
+                formAddError(inputOtherForm2);
+                errorForm2++;
+            }
+            
+        }
+        return errorForm2;
+    }
+
+    function formAddError(inputOtherForm2) {
+        inputOtherForm2.parentElement.classList.add('_error');
+        inputOtherForm2.classList.add("_error");
+    }
+
+    function formRemoveError(inputOtherForm2) {
+        inputOtherForm2.parentElement.classList.remove('_error');
+        inputOtherForm2.classList.remove("_error");
+    }
+
+    // Form validation on Popup 3
+    const form3 = document.getElementById("form3");
+    form3.addEventListener("submit", formSendForm3);
+
+    async function formSendForm3(e) {
+        e.preventDefault();
+
+        let errorForm3 = formValidateForm3(form3);
+
+        let formData = new FormData(form3);
+
+        if (errorForm3 === 0) {
+            form3.reset();
+            alert(`The form has been sent`);
+        } else {
+            alert(`Fill in the required fields!`);
+        }
+    }
+
+    function formValidateForm3(form3) {
+        let errorForm3 = 0;
+        let formReqForm3 = document.querySelectorAll('._reqForm3');
+
+        for (let index = 0; index < formReqForm3.length; index++) {
+            const inputOtherForm3 = formReqForm3[index];
+            formRemoveError(inputOtherForm3);
+
+            if (inputOtherForm3.value === '') {
+                formAddError(inputOtherForm3);
+                errorForm3++;
+            }
+            
+        }
+        return errorForm3;
+    }
+
+    function formAddError(inputOtherForm3) {
+        inputOtherForm3.parentElement.classList.add('_error');
+        inputOtherForm3.classList.add("_error");
+    }
+
+    function formRemoveError(inputOtherForm3) {
+        inputOtherForm3.parentElement.classList.remove('_error');
+        inputOtherForm3.classList.remove("_error");
+    }
+
+    // Form validation on Popup 4
+    const form4 = document.getElementById("form4");
+    form4.addEventListener("submit", formSendForm4);
+
+    async function formSendForm4(e) {
+        e.preventDefault();
+
+        let errorForm4 = formValidateForm4(form4);
+
+        let formData = new FormData(form4);
+
+        if (errorForm4 === 0) {
+            form4.reset();
+            alert(`The form has been sent`);
+        } else {
+            alert(`Fill in the required fields!`);
+        }
+    }
+
+    function formValidateForm4(form4) {
+        let errorForm4 = 0;
+        let formReqForm4 = document.querySelectorAll('._reqForm4');
+
+        for (let index = 0; index < formReqForm4.length; index++) {
+            const inputOtherForm4 = formReqForm4[index];
+            formRemoveError(inputOtherForm4);
+
+            if (inputOtherForm4.value === '') {
+                formAddError(inputOtherForm4);
+                errorForm4++;
+            }
+            
+        }
+        return errorForm4;
+    }
+
+    function formAddError(inputOtherForm4) {
+        inputOtherForm4.parentElement.classList.add('_error');
+        inputOtherForm4.classList.add("_error");
+    }
+
+    function formRemoveError(inputOtherForm4) {
+        inputOtherForm4.parentElement.classList.remove('_error');
+        inputOtherForm4.classList.remove("_error");
+    }
+
+    // Form validation on Popup 7
+    const formFranchise = document.getElementById("formFranchise");
+    formFranchise.addEventListener("submit", formSendFranchise);
+
+    async function formSendFranchise(e) {
+        e.preventDefault();
+
+        let errorFranchise = formValidateFranchise(formFranchise);
+
+        let formDataFranchise = new FormData(formFranchise);
+
+        if (errorFranchise === 0) {
+            formFranchise.reset();
+            alert(`The form has been sent`);
+        } else {
+            alert(`Fill in the required fields!`);
+        }
+    }
+
+    function formValidateFranchise(formFranchise) {
+        let errorFranchise = 0;
+        let formReqFranchise = document.querySelectorAll('._reqFranchise');
+
+        for (let index = 0; index < formReqFranchise.length; index++) {
+            const inputFranchise = formReqFranchise[index];
+            formRemoveErrorFranchise(inputFranchise);
+
+           if (inputFranchise.classList.contains('_email')) {
+                if (emailTestFranchise(inputFranchise)) {
+                    formAddErrorFranchise(inputFranchise);
+                    errorFranchise++;
+                }
+            } else {
+                if (inputFranchise.value === '') {
+                    formAddErrorFranchise(inputFranchise);
+                    errorFranchise++;
+                }
+            }
+            
+        }
+        return errorFranchise;
+    }
+
+    function formAddErrorFranchise(inputFranchise) {
+        inputFranchise.parentElement.classList.add('_error');
+        inputFranchise.classList.add("_error");
+    }
+
+    function formRemoveErrorFranchise(inputFranchise) {
+        inputFranchise.parentElement.classList.remove('_error');
+        inputFranchise.classList.remove("_error");
+    }
+    // Function for test email
+    function emailTestFranchise(inputFranchise) {
+        return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(inputFranchise.value);
+    }
+});
